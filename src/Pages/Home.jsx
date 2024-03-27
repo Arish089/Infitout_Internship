@@ -67,7 +67,7 @@ const Home = () => {
   </ModalContent>
 </Modal>
 
-        <Grid m='auto' templateColumns={{sm:'repeat(1, 1fr)',md:'repeat(2, 1fr)'}} gap={{md:4,lg:10}}  >
+        <Grid m='auto' templateColumns={{sm:'repeat(1, 1fr)',md:'repeat(2, 1fr)'}} gap={{base:20,md:4,lg:10}}  >
             <Flex boxShadow='lg' rounded='md' direction='column'  justifyContent='center' px={{base:1,sm:10}} py={10} bg='white' >
             <Flex justifyContent='space-between'>
                 <Text>Summary</Text>
@@ -134,7 +134,7 @@ const Home = () => {
                 </Flex>
 
                 <Flex boxShadow='lg' rounded='md' direction='column' justifyContent='center' px={{base:1,sm:10}} py={10}
-                bg='white' maxHeight={!showDetails ?'400px':'fit-content'}>
+                bg='white' maxHeight={!showDetails ?'450px':'fit-content'}>
             <Flex justifyContent='space-between'>
             <Text>Moving averages</Text>
             
@@ -153,10 +153,10 @@ const Home = () => {
                 </Box>
             </Flex>
             
-            <Flex direction='column' px={{base:5,sm:10,md:15,lg:20}}>
+            <Flex direction='column' px={{base:5,sm:10,md:15,lg:20}} gap={2}>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
                     EMA (5)
                     </Flex>
                     
@@ -164,7 +164,7 @@ const Home = () => {
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
                     SMA (5)
                     </Flex>
                     
@@ -172,127 +172,127 @@ const Home = () => {
                 </Flex>
       {/* Additional elements to be shown/hidden */}
       {showDetails && (
-        <Box>
+        <Box display='flex' flexDirection='column' gap={2}>
           {/* Include your additional elements here */}
           <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    EMA (10)
                     </Flex>
                     
-                    21953.99
+                    21583.99
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    SMA (10)
+                    </Flex>
+                    
+                    22978.99
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    EMA (20)
+                    </Flex>
+                    
+                    21573.99
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
                     <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
+                    SMA (20)
                     </Flex>
                     
-                    21953.99
+                    22985.99
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    EMA (30)
+                    </Flex>
+                    
+                    22037.99
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    SMA (30)
+                    </Flex>
+                    
+                    22115.99
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    EMA (50)
+                    </Flex>
+                    
+                    21874.99
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    SMA (50)
+                    </Flex>
+                    
+                    21949.99
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    EMA (100)
+                    </Flex>
+                    
+                    21363.99
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    SMA (100)
+                    </Flex>
+                    
+                    21265.99
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
                     <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
+                    EMA (200)
                     </Flex>
                     
-                    21953.99
+                    22456.99
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    SMA (200)
                     </Flex>
                     
-                    21953.99
+                    22154.99
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
+                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
+                    Ichimoku Base line (9, 26, 52, 26)
                     </Flex>
                     
-                    21953.99
+                    22118.99
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
+                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
+                    Volume Weighted MA (20)
                     </Flex>
                     
-                    21953.99
+                    0.00
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
+                    <Badge px={1} colorScheme='blue' mx={1}>B</Badge>
+                    Hull MA (9)
                     </Flex>
                     
-                    21953.99
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
-                    </Flex>
-                    
-                    21953.99
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
-                    </Flex>
-                    
-                    21953.99
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
-                    </Flex>
-                    
-                    21953.99
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
-                    </Flex>
-                    
-                    21953.99
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
-                    </Flex>
-                    
-                    21953.99
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
-                    </Flex>
-                    
-                    21953.99
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
-                    </Flex>
-                    
-                    21953.99
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='red' mx={1}>S</Badge>
-                    SMA (5)
-                    </Flex>
-                    
-                    21953.99
+                    22082.99
                 </Flex>
         </Box>
       )}
@@ -310,7 +310,8 @@ const Home = () => {
     </Flex>
     </Flex>
 
-                <Flex boxShadow='lg' bg='white' rounded='md' direction='column' justifyContent='center'px={{base:1,sm:10}} py={10} maxHeight={!showDetails1 ?'400px':null} >
+                <Flex boxShadow='lg' bg='white' rounded='md' direction='column' justifyContent='center'px={{base:1,sm:10}} 
+                py={10} maxHeight={!showDetails1 ?'450px':null} >
                     
             <Flex justifyContent='space-between'>
             <Text>Oscillators</Text>
@@ -332,7 +333,7 @@ const Home = () => {
                     <Badge py={2} px={4} colorScheme='green' rounded='md'>Bullish</Badge>
                 </Box>
             </Flex>
-            <Flex direction='column' px={{base:5,sm:10,md:15,lg:20}}>
+            <Flex direction='column' px={{base:5,sm:10,md:15,lg:20}} gap={2}>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
                     <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
@@ -351,15 +352,63 @@ const Home = () => {
                 </Flex>
       {/* Additional elements to be shown/hidden */}
       {showDetails1 && (
-        <Box>
+        <Box display='flex' flexDirection='column' gap={2}>
           {/* Include your additional elements here */}
           <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
                     <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
-                    RSI (14)
+                    CCI (20)
+                    </Flex>
+                    
+                    -6.45
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
+                    ADX (14)
+                    </Flex>
+                    
+                    14.69
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
+                    Awesome Osc.
+                    </Flex>
+                    
+                    -64.41
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
+                    Momentum (10)
+                    </Flex>
+                    
+                    -187.75
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
+                    Macd (12, 26, 9)
                     </Flex>
                     
                     48.70
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
+                    Stoch. RSI Fast (3, 3, 14, 14)
+                    </Flex>
+                    
+                    22.64
+                </Flex>
+                <Flex justifyContent='space-between' alignItems='center'>
+                    <Flex alignItems='center'>
+                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
+                    Williams %Range (14)
+                    </Flex>
+                    
+                    -46.38
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
@@ -372,58 +421,10 @@ const Home = () => {
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>
                     <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
-                    RSI (14)
+                    Ultimate Osc. (7, 14, 28)
                     </Flex>
                     
-                    48.70
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
-                    Stoch&K (14, 3, 3)
-                    </Flex>
-                    
-                    36.07
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
-                    RSI (14)
-                    </Flex>
-                    
-                    48.70
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
-                    Stoch&K (14, 3, 3)
-                    </Flex>
-                    
-                    36.07
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
-                    RSI (14)
-                    </Flex>
-                    
-                    48.70
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
-                    Stoch&K (14, 3, 3)
-                    </Flex>
-                    
-                    36.07
-                </Flex>
-                <Flex justifyContent='space-between' alignItems='center'>
-                    <Flex alignItems='center'>
-                    <Badge px={1} colorScheme='gray' mx={1}>N</Badge>
-                    RSI (14)
-                    </Flex>
-                    
-                    48.70
+                    54.42
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'>
                     <Flex alignItems='center'>

@@ -1,8 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a replicate of Zerodha streak which is a cloud-based platform provided by Zerodha, which is one of the leading stockbrokers in India. Streak is designed to assist traders and investors in making informed decisions by offering advanced trading strategies, backtesting, and automated trading capabilities.
+I designed the page as provided in the sample, In 'view details' functionality, in moving averages and Oscillators I've used same set of data to
